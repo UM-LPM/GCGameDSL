@@ -24,3 +24,31 @@ HEIGHT ::= number
 GAME_STATE_DURATION ::= number
 GAME_DURATION :: number
 ```
+
+## Board with games 1 and 50 example
+```console
+board(130, 60,
+  (1, 10, 10), (2, 10, 50), (3, 30, 30),
+  (4, 50, 10), (5, 50, 50), (6, 80, 10),
+  (7, 80, 50), (8, 100, 30), (9, 120, 10),
+  (10, 120, 50))
+
+game(1, sequence, random, 60,
+    game_state(start,0,off,off,off,off,red,off,off,off,off,off),
+    game_state(normal,0,red,off,off,off,off,off,off,off,off,off),
+    game_state(normal,0,off,red,off,off,off,off,off,off,off,off),
+    game_state(normal,0,off,off,red,off,off,off,off,off,off,off),
+    game_state(normal,0,off,off,off,red,off,off,off,off,off,off),
+    game_state(normal,0,off,off,off,off,red,off,off,off,off,off),
+    game_state(normal,0,off,off,off,off,off,red,off,off,off,off),
+    game_state(normal,0,off,off,off,off,off,off,red,off,off,off),
+    game_state(normal,0,off,off,off,off,off,off,off,red,off,off),
+    game_state(normal,0,off,off,off,off,off,off,off,off,red,off),
+    game_state(normal,0,off,off,off,off,off,off,off,off,off,red))
+
+game(50, stopwatch, sequence, 0,
+    game_state(start,0,off,off,red,off,off,off,off,off,off,off),
+    game_state(clean,0,green,off,green,off,off,off,off,off,off,green),
+    game_state(clean,0,off,red,off,red,off,red,off,red,off,red),
+    game_state(clean,0,blue,off,blue,off,blue,off,blue,off,blue,off))
+```
