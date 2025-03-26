@@ -2,7 +2,7 @@ set terminal pngcairo size 1000,600 enhanced font "Arial,12"
 set output '1000.png'
 
 # set title "Eval vs Distance"
-set xlabel "Evaluations"
+set xlabel "Number of Fitness Evaluations"
 set ylabel "Distance in cm"
 set xrange [0:3500]
 set grid
