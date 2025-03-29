@@ -9,6 +9,6 @@ set grid
 set key left top
 
 plot "rnd_6000a.data" using 1:2 with linespoints title "RA" lt rgb "red" pt 7 lw 3 dashtype '.', \
-"ea_6000a.data" using 1:2 with linespoints title "EA" lt rgb "blue" pt 5 lw 2, \
+"ea_6000a.data" using 1:2 with linespoints title "GA" lt rgb "blue" pt 5 lw 2, \
 6000 with lines title "Target 60m" lt rgb "green" lw 2 dashtype 4
 
